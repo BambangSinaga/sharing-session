@@ -5,6 +5,8 @@ Rails.application.routes.draw do
       resources :rooms, only: %i[index create show] do
         post :booking, on: :collection
       end
+
+      resources :room_user_txns, only: %i[index]
     end
   end
 end

@@ -16,6 +16,12 @@ module Api::V1
       end
     end
 
+    def show
+      room = Room.find(params[:id])
+
+      render json: ::V1::RoomSerializer[room].serializable_hash, status: :ok
+    end
+
     def booking
       booking_params
 

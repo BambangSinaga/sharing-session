@@ -10,6 +10,7 @@ gem 'pg', '~> 1.1'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 gem 'rails_param'
+gem 'jsonapi-serializer'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
@@ -37,6 +38,7 @@ end
 
 group :test do
   gem 'database_cleaner-active_record'
+  gem 'dry-validation'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'rspec-rails'
